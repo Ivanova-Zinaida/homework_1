@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg_1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: top center;
+}
+.container {
+	width: 960px;
+    margin: 0 auto;
+}
+.section-bg {
+    background-color: rgba(240, 240, 245, 0.7);
+    border-radius: 20px;
+    width: 960px;
+    margin: 0 auto 20px;
+    padding: 20px;
+}
+.header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(240, 240, 235, 0.6);
+    text-align:right;
+}
+.menu{
+    margin: 0;
+    padding:0;
+    margin-left: auto;
+    padding: 20px 0;
+}
+.menu-list {
+	list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu-link {
+	text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.section-title {
+	text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 30px;
+    padding: 0;
+}
+.section-subtitle{
+    font-size: 22px;
+    margin: 0;
+}
+.section-quoter {
+	font-style: italic;
+    font-size: 19px;
+}
+.section-text{
+    text-align: justify;
+}
+.card{
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+.card-title {
+	text-align: center;
+    margin: 0 0 20px;
+    padding: 0;
+}
+.card-img {
+	width: 350px;
+    height: 500px;
+}
+.card-text{
+    font-size: 20px;
+}
+.card-link {
+	text-decoration: none;
+    color: blue;
+}
+.news-img{
+    width: 600px;
+    height: 400px;
+}
+
+.news-link-author{
+    text-decoration: none;
+    color: crimson;
+    margin-right: 10px;
+}
+.link-anchor, .news-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.author{
+    text-align: center;
+}
+.author-list {
+	margin: 0, 0, 20px;
+    padding: 0;
+}
+.author-item {
+	list-style-type: none;
+}
+.game-table{
+    margin: 20px auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.game-table caption{
+	margin: 5px 0;
+}
+.game-table td, .game-table th{
+	border: 1px solid #ccc;
+    padding: 10px;
+}
+input, select{
+    margin-left: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+input[type=checkbox], input[type=radio]{
+    display: inline-block;
+    margin-left: 25px;
+}
+.label-textarea{
+    display:block;
+    margin-bottom: 10px;
+}
+textarea{
+    resize: none;
+}
+.btn{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: chocolate;
+    border: none;
+}

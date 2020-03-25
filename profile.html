@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header">
+       <div class="container">
+            <ul class="menu">
+                <li class="menu-list"><a href="index.html" class="menu-link">Главная</a></li>
+                <li class="menu-list"><a href="reviews.html" class="menu-link">Рецензии</a></li>
+                <li class="menu-list"><a href="author.html" class="menu-link">Об авторе</a></li>
+                <li class="menu-list"><a href="news.html" class="menu-link">Новости</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Анкета</a></li>
+                <li class="menu-list"><a href="authorization.html" class="menu-link">Авторизация</a></li>
+                <li class="menu-list"><a href="registration.html" class="menu-link">Регистрация</a></li>
+            </ul>
+       </div>
+   </header>
+   <section class="registration section-bg">
+        <div class="container">
+            <h1 class="section-title">Анкета</h1>
+            <form action=" ">
+                <fieldset>
+                   <legend> Заполните анкету</legend>
+                    <p>
+                        <label>
+                            Дата заполнения анкеты <input type="date">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Введите имя<input type="text" required placeholder="Имя" maxlength="15">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Сколько вам лет?<input type="number" max="120">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Введите email <input type="email" required placeholder="email">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Введите телефон в формате +7-xxx-xxx-xx-xx, где вместо x должна быть цифра: <input type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7-952-375-97-13">
+                        </label>
+                    </p>
+                    <p>
+                        <label><input name="gender" type="radio">Мужской</label>
+                        <label><input name="gender" type="radio">Женский</label> 
+                    </p>
+                    <p>
+                        <label>Любимый цвет <input name="color" type="color"></label> 
+                    </p>
+                       Увлечения
+                        <label><input type="checkbox"> Спорт</label> 
+                        <label><input type="checkbox">Книги</label> 
+                        <label><input type="checkbox">Вязание</label>
+                        <label><input type="checkbox">Кино</label>
+                        <label><input type="checkbox">Путешествие</label>
+                    <p>
+                         Веберите любиый жанр
+                          <select> 
+                              <option> Классическая литература </option>
+                              <option> Детские книги </option>
+                              <option> Детективы </option>
+                              <option> Фэнтези </option>
+                              <option> Фантастика </option>
+                              <option> Современная проза</option>
+                              <option> Приключения </option>
+                              <option> Ужасы </option>
+                          </select>
+                     </p>
+                    <p>
+                        <label>
+                            Загрузите фотографию <input type="file" accept='image/*'>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="textarea" class="label-textarea">Опишите себя</label>
+                        <textarea cols="45" rows="10" id="textarea"> </textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value='Отправить' class="btn">  
+                    </p>
+                </fieldset>
+            </form>          
+        </div>   
+   </section>
+   
+</body>
+</html>

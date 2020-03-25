@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Ведьмак</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <br>
-    <ul id="menu">
-        <li><a href="#">Главная</a></li>
-        <li><a href="reviews.html">Рецензии</a></li>
-        <li><a href="author.html">Об авторе</a></li>
-        <li><a href="authorization.html">Авторизация</a></li>
-        <li><a href="registration.html">Регистрация</a></li>
-    </ul>
-    <br>
-    <h1 align="center">Цикл «Ведьмак»</h1>
-    <br>
-    <div>
-        <h2>«Последнее желание»</h2>
-        <img src="img/book_1.jpg" alt="книга Последнее желание" width="350" height="500" id="last_wish">
-        <p> Профессиональный истребитель чудовищ по своему очередному заданию прибывает в столицу Вызиму... <a href="reviews.html#last_wish_review">Подробнее</a></p>
-        
-    </div>
-    <br>
-    <div>
-        <h2>«Меч Предназначения»</h2>
-        <img src="img/book_2.jpg" alt="книга Меч Предназначения" width="350" height="500" id="The_Sword_Of_Destiny">
-        <p>В этой части Геральт впервые встречает Цири и находит свое Предназначение... <a href="reviews.html#The_Sword_Of_Destiny_review">Подробнее</a></p>  
-    </div>
-    <br>
-    <div>
-        <h2>«Кровь эльфов»</h2>
-        <img src="img/book_3.jpg" alt="книга Кровь эльфов" width="350" height="500" id="blood_Of_Elves">
-        <p>Королевство Цинтра захвачено, однако юная наследница Цири чудом избежала смерти... <a href=
-        "reviews.html#blood_Of_Elves_review">Подробнее</a></p>
-    </div>
-    <a href="#menu">Начало страницы</a>
+   <header class="header">
+       <div class="container">
+            <ul class="menu" id="header-menu">
+                <li class="menu-list"><a href="#" class="menu-link">Главная</a></li>
+                <li class="menu-list"><a href="reviews.html" class="menu-link">Рецензии</a></li>
+                <li class="menu-list"><a href="authorization.html" class="menu-link">Об авторе</a></li>
+                <li class="menu-list"><a href="news.html" class="menu-link">Новости</a></li>
+                <li class="menu-list"><a href="profile.html" class="menu-link">Анкета</a></li>
+                <li class="menu-list"><a href="authorization.html" class="menu-link">Авторизация</a></li>
+                <li class="menu-list"><a href="registration.html" class="menu-link">Регистрация</a></li>
+            </ul>
+       </div>
+   </header>
+   <section class="main section-bg">
+       <div class="container">
+            <h1 class="section-title">Цикл «Ведьмак»</h1>
+                <div class="card">
+                    <h2 class="card-title">«Последнее желание»</h2>
+                    <img src="img/book_1.jpg" alt="книга Последнее желание" id="last_wish" class="card-img">
+                    <p class="card-text"> Профессиональный истребитель чудовищ по своему очередному заданию прибывает в столицу Вызиму... <a href="reviews.html#last_wish_review" class="card-link">Подробнее</a></p>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">«Меч Предназначения»</h2>
+                    <img src="img/book_2.jpg" alt="книга Меч Предназначения"  id="The_Sword_Of_Destiny" class="card-img">
+                    <p class="card-text">В этой части Геральт впервые встречает Цири и находит свое Предназначение... <a href="reviews.html#The_Sword_Of_Destiny_review" class="card-link">Подробнее</a></p>  
+                </div>
+                <div class="card">
+                    <h2 class="card-title">«Кровь эльфов»</h2>
+                    <img src="img/book_3.jpg" alt="книга Кровь эльфов" id="blood_Of_Elves" class="card-img">
+                    <p class="card-text">Королевство Цинтра захвачено, однако юная наследница Цири чудом избежала смерти... <a href=
+                    "reviews.html#blood_Of_Elves_review" class="card-link">Подробнее</a></p>
+                </div> 
+       </div>
+        <a href="#header-menu" class="link-anchor">Начало страницы</a> 
+   </section>
+    
 </body>
 </html>

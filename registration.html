@@ -3,50 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <br>
-    <ul id="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="reviews.html">Рецензии</a></li>
-        <li><a href="author.html">Об авторе</a></li>
-        <li><a href="authorization.html">Авторизация</a></li>
-        <li><a href="#">Регистрация</a></li>
-    </ul>
-    <br> 
-    <h1 align='center'>Регистрация</h1>
-    <form action=" ">
-        <fieldset>
-           <legend>Форма регистрации</legend>
-            <p>
-                <label for="">
-                    Введите логин <input type="text" required placeholder="логин" maxlength="15" minlength ="6">
-                </label>
-            </p>
-            <p>
-                <label for="">
-                    Введите email <input type="email" required placeholder="email">
-                </label>
-            </p>
-            <p>
-                <label for="">
-                    Введите пароль <input type="password" required placeholder="пароль" maxlength="15" minlength ="6">
-                </label>
-            </p>
-            <p>
-                <label for="">
-                    Повторите  пароль <input type="password" required placeholder="Повторите  пароль" maxlength="15" minlength="6">
-                </label>
-            </p>
-            <p>
-                <label for="">
-                    Загрузите фотографию <input type="file" accept='image/*'>
-                </label>
-            </p>
-            <p>
-                <input type="submit" value='зарегистрироваться '>  
-            </p>
-        </fieldset>
-    </form>
+   <header class="header">
+       <div class="container">
+            <ul class="menu">
+                <li class="menu-list"><a href="index.html" class="menu-link">Главная</a></li>
+                <li class="menu-list"><a href="reviews.html" class="menu-link">Рецензии</a></li>
+                <li class="menu-list"><a href="author.html" class="menu-link">Об авторе</a></li>
+                <li class="menu-list"><a href="news.html" class="menu-link">Новости</a></li>
+                <li class="menu-list"><a href="profile.html" class="menu-link">Анкета</a></li>
+                <li class="menu-list"><a href="authorization.html" class="menu-link">Авторизация</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Регистрация</a></li>
+            </ul>
+       </div>
+   </header>
+   <section class="registration section-bg">
+        <div class="container">
+            <h1 class="section-title">Регистрация</h1>
+            <form action=" ">
+                <fieldset>
+                   <legend>Форма регистрации</legend>
+                    <p>
+                        <label>
+                            Введите логин <input type="text" required placeholder="логин" maxlength="15" minlength ="6">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Введите email <input type="email" required placeholder="email">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Введите пароль <input type="password" required placeholder="пароль" maxlength="15" minlength ="6">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Повторите  пароль <input type="password" required placeholder="Повторите  пароль" maxlength="15" minlength="6">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Загрузите фотографию <input type="file" accept='image/*'>
+                        </label>
+                    </p>
+                    <p>
+                        <input type="submit" value='зарегистрироваться ' class="btn">  
+                    </p>
+                </fieldset>
+            </form>          
+        </div>   
+   </section>
+   
 </body>
 </html>
