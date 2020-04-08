@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -140,4 +143,153 @@ textarea{
     border-radius: 20px;
     background-color: chocolate;
     border: none;
+}
+.wrap{
+    width: 1200px;
+    background-color:#fff;
+    margin: 0 auto;
+}
+.grid__menu{
+   text-align: center; 
+}
+.grid__item{
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.grid__item:hover{
+    background:aqua; 
+}
+
+.game__wrap {
+	padding: 10px;
+}
+.game__img {
+    display: block;
+	width: 90%;
+    height: auto;
+    margin: 60px auto 0;
+}
+.btn__wrap{
+    text-align: center;
+    margin: 30px 0 30px;
+}
+.game__btn{
+    color: #000;
+    
+}
+.game__btn:hover{
+    box-shadow:0 0 5px aqua;
+}
+.slider_wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 10px 3px gray;
+    margin-top:30px;
+    margin-bottom: 50px;
+}
+.slider-img{
+    width: 600px;
+    height: 400px;
+}
+.slider__title{
+    position: absolute;
+    color:#fff;
+    font-style: italic;
+    z-index: 4;
+    font-size: 26px;
+    top:30%;
+    left: 27%;
+    text-align: center;
+}
+.slider-item {
+	display: inline-block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    transition: all 0.5s ease-in-out;
+}
+.slider-1 {
+	opacity: 1;
+    z-index: 3;
+}
+input[type=radio]{
+    display: none;
+}
+
+.carusel-arrow label{
+	border:solid rgba(3, 103, 103, 0.5);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.carusel-arrow-prev label {
+	position: absolute;
+    transform:translateY(-50%) rotate(130deg);
+    left: -35px;
+    bottom: 50%;
+}
+.carusel-arrow-next label {
+	position: absolute;
+    transform: translateY(-50%) rotate(-45deg);
+    right: -35px;
+    bottom: 50%;
+}
+.carusel-arrow-next label:nth-child(1),
+.carusel-arrow-prev label:nth-child(1){
+    visibility: visible;
+}
+.carusel-indicator{
+    position: absolute;
+    bottom: -50px;
+    left: 45%;
+}
+.carusel-indicator-item{
+    display: inline-block;
+    background:rgba(3, 103, 103, 0.5);
+    width: 20px;
+    height: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+ 
+}
+#slide-1:checked ~ .slider-1, 
+#slide-2:checked ~ .slider-2, 
+#slide-3:checked ~ .slider-3 {
+    z-index: 3;
+    opacity: 1;
+}
+#slide-1:checked ~ .carusel-indicator .indicator-active-1, 
+#slide-2:checked ~ .carusel-indicator .indicator-active-2,
+#slide-3:checked ~ .carusel-indicator .indicator-active-3 {
+    background: rgb(143, 143, 143);
+}
+#slide-1:checked ~ .carusel-arrow-next label:nth-child(2), 
+#slide-2:checked ~ .carusel-arrow-next label:nth-child(3), 
+#slide-3:checked ~ .carusel-arrow-next label:nth-child(1) {
+    visibility: visible;
+}
+#slide-1:checked ~ .carusel-arrow-prev label:nth-child(3), 
+#slide-2:checked ~ .carusel-arrow-prev label:nth-child(1), 
+#slide-3:checked ~ .carusel-arrow-prev label:nth-child(2)  {
+    visibility: visible;
+}
+.game__title {
+	text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+.game__text {
+	padding: 10px 25px;
+    
 }
