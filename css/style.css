@@ -145,9 +145,15 @@ textarea{
     border: none;
 }
 .wrap{
-    width: 1200px;
-    background-color:#fff;
+    max-width: 1200px;
     margin: 0 auto;
+    background-color:#ccc;
+}
+.inner__bg{
+    background: #fff;
+}
+.inner__bg_right{
+    background:#ccc;
 }
 .grid__menu{
    text-align: center; 
@@ -190,6 +196,8 @@ textarea{
     margin-top:30px;
     margin-bottom: 50px;
 }
+
+
 .slider-img{
     width: 600px;
     height: 400px;
