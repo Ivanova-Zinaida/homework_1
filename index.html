@@ -10,12 +10,18 @@
        <div class="container">
             <ul class="menu" id="header-menu">
                 <li class="menu-list"><a href="#" class="menu-link">Главная</a></li>
-                <li class="menu-list"><a href="reviews.html" class="menu-link">Рецензии</a></li>
+                <li class="menu-list reviews"><a href="reviews.html" class="menu-link">Рецензии</a>
+                    <ul class="menu__reviws">
+                        <li class="reviws__item"><a href="reviews.html#last_wish_review" class="reviws__link">Последнее желание</a></li>
+                        <li class="reviws__item"><a href="#reviews.htmlThe_Sword_Of_Destiny_review" class="reviws__link">Меч Предназначения</a></li>
+                        <li class="reviws__item"><a href="reviews.html#blood_Of_Elves_review" class="reviws__link">Кровь эльфов</a></li>
+                    </ul>
+                </li>
                 <li class="menu-list"><a href="authorization.html" class="menu-link">Об авторе</a></li>
                 <li class="menu-list"><a href="news.html" class="menu-link">Новости</a></li>
                 <li class="menu-list"><a href="profile.html" class="menu-link">Анкета</a></li>
                 <li class="menu-list"><a href="authorization.html" class="menu-link">Авторизация</a></li>
-                <li class="menu-list"><a href="registration.html" class="menu-link">Регистрация</a></li>
+                <li class="menu-list"><a href="#modal" class="menu-link">Регистрация</a></li>
                 <li class="menu-list"><a href="grid.html" class="menu-link">Grid</a></li>
             </ul>
        </div>
@@ -42,6 +48,41 @@
        </div>
         <a href="#header-menu" class="link-anchor">Начало страницы</a> 
    </section>
-    
+   <section class="modal-bg" id="modal">
+        <form action=" " class="form-modal form">
+            <fieldset>
+                <legend>Форма регистрации</legend>
+                <p>
+                    <label>
+                        Введите логин <input type="text" required placeholder="логин" maxlength="15" minlength ="6">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Введите email <input type="email" required placeholder="email">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Введите пароль <input type="password" required placeholder="пароль" maxlength="15" minlength ="6">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Повторите  пароль <input type="password" required placeholder="Повторите  пароль" maxlength="15" minlength="6">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         Загрузите фотографию <input type="file" accept='image/*'>
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" value='зарегистрироваться ' class="btn">  
+                </p>
+            </fieldset>
+            <a href="#" class="btn__close">Закрыть</a>
+        </form>           
+   </section> 
 </body>
 </html>

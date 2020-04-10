@@ -17,7 +17,7 @@ body{
 .section-bg {
     background-color: rgba(240, 240, 245, 0.7);
     border-radius: 20px;
-    width: 960px;
+    width: 980px;
     margin: 0 auto 20px;
     padding: 20px;
 }
@@ -29,14 +29,20 @@ body{
 }
 .menu{
     margin: 0;
-    padding:0;
+    min-height:80px;
     margin-left: auto;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .menu-list {
 	list-style-type: none;
-    display: inline-block;
-    margin-left: 20px;
+    padding: 10px;
+    border-left: 1px solid black;
+}
+.menu-list:last-child{
+    border-right: 1px solid black;
 }
 .menu-link {
 	text-decoration: none;
@@ -61,6 +67,37 @@ body{
 }
 .section-text{
     text-align: justify;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+}
+.reviews:hover .menu__reviws{
+    display: block;
+}
+.menu__reviws{
+    position: absolute;
+    list-style-type: none;
+    top:44px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display:none; 
+}
+.reviws__item{
+    padding: 15px;
+    background-color:darkgray;
+    border-bottom: 1px solid black;
+}
+.reviws__item:hover{
+    background-color: coral;
+}
+.reviws__link{
+    color:currentColor; 
+    text-decoration: none;
 }
 .card{
     padding: 0 20px 20px;
@@ -88,7 +125,10 @@ body{
     width: 600px;
     height: 400px;
 }
-
+.form{
+    width: 90%;
+    margin: 0 auto;
+}
 .news-link-author{
     text-decoration: none;
     color: crimson;
@@ -157,16 +197,36 @@ textarea{
 }
 .grid__menu{
    text-align: center; 
+   flex-direction: column;
+   align-items: flex-start;
+}
+.sub__menu{
+    position:absolute;
+    top:-1px;
+    left: -160px;
 }
 .grid__item{
-    display: block;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 10px 15px;
+    border: none;
+    width: 80%;
+    border-bottom: 1px solid black;
 }
-.grid__item:hover{
-    background:aqua; 
+.sub__menu_item{
+    padding: 13px 15px;
 }
-
+.grid__item:last-child{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.grid__link:hover{
+    color:darkviolet;
+}
+.grid__reviews:hover{
+    background: darkgray;
+}
+.reviews__grid{
+    background: darkgray;
+}
 .game__wrap {
 	padding: 10px;
 }
@@ -181,8 +241,7 @@ textarea{
     margin: 30px 0 30px;
 }
 .game__btn{
-    color: #000;
-    
+    color: #000;   
 }
 .game__btn:hover{
     box-shadow:0 0 5px aqua;
@@ -196,8 +255,6 @@ textarea{
     margin-top:30px;
     margin-bottom: 50px;
 }
-
-
 .slider-img{
     width: 600px;
     height: 400px;
@@ -231,7 +288,6 @@ textarea{
 input[type=radio]{
     display: none;
 }
-
 .carusel-arrow label{
 	border:solid rgba(3, 103, 103, 0.5);
     border-width: 0 5px 5px 0;
@@ -300,4 +356,34 @@ input[type=radio]{
 .game__text {
 	padding: 10px 25px;
     
+}
+.modal-bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.form-modal{
+    background-color: beige;
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+}
+.btn__close{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin:10px 40%;
+    padding: 10px;
+    border: 1px solid #4f3f5c;
+    box-shadow: 0 0 5px #ccc;
+}
+#modal:target {
+	display: flex;
 }
