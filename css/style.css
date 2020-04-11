@@ -49,6 +49,12 @@ body{
     color: black;
     font-size: 20px;
 }
+.menu-link:hover {
+	color:darkmagenta;
+}
+.menu-list:hover{
+    background-color: azure;
+}
 .section-title {
 	text-align: center;
     margin: 0;
@@ -94,6 +100,15 @@ body{
 }
 .reviws__item:hover{
     background-color: coral;
+}
+.more{
+    display:inline-block;
+    width: 11px;
+    height: 11px;
+    border:solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-left: 5px;
 }
 .reviws__link{
     color:currentColor; 
